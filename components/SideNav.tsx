@@ -4,8 +4,34 @@ import Link from 'next/link';
 
 const items = [
   {
-    title: 'Get started',
-    links: [{href: '/docs', children: 'Overview'}],
+    title: 'DeFi Introduction',
+    links: [
+        {href: '/docs/Core-Concepts/Data-Messaging', children: 'Data Messaging'},
+        {href: '/docs/Core-Concepts/Perpetual-Futures', children: "Perpetual Futures"},
+        {href: '/docs/Core-Concepts/Margin-Trading', children: "Margin Trading"},
+        {href: '/docs/Core-Concepts/Funding-Payments', children: "Funding Paymens"},
+        {href: '/docs/Core-Concepts/Market-Makers', children: "Market Makers"},
+    ],
+  },
+  {
+    title: 'Project Introduction',
+    links: [
+        {href: '/docs/ATP', children: 'ATP'},
+    ],
+  },
+  {
+    title: 'Programs',
+    links: [
+        {href: '/docs/Programs/Simex', children: 'Matching Engine (SimEx)'},
+        {href: '/docs/Programs/Risk-Manager', children: 'Risk Manager'}
+    ],
+  },
+  {
+    title: 'Development',
+    links: [
+        {href: '/', children: 'Setting up Local Env'},
+        {href: '/', children: 'Running in debug mode'}
+    ],
   },
 ];
 
@@ -52,7 +78,7 @@ export function SideNav() {
           }
           li {
             list-style: none;
-            margin: 0;
+            margin: 0 0 .2rem 0;
           }
           li a {
             text-decoration: none;

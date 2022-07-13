@@ -40,6 +40,7 @@ function collectHeadings(node, sections = []) {
 }
 
 export default function MyApp({ Component, pageProps }: AppProps) {
+  console.log(pageProps)
   const { markdoc } = pageProps;
 
   let title = TITLE;
